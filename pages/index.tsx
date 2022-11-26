@@ -1,3 +1,9 @@
+import Navbar from "../components/Navbar";
+
 export default function Home() {
-  return <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-lg">lol</div>;
+  return (
+    <main className="h-screen">
+      <Navbar />
+    </main>
+  );
 }
