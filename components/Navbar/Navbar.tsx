@@ -39,12 +39,22 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-        <Link
-          className="px-4 py-2 rounded bg-transparent border border-yellow text-sm hover:bg-yellow/5 duration-150 transition-colors"
-          href="/resume.pdf"
-        >
-          Resume
-        </Link>
+        <div className="flex justify-center">
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href="/resume.pdf"
+            className="px-4 py-2 bg-transparent text-sm hover:text-yellow duration-150 transition-colors"
+          >
+            Resume
+          </Link>
+          <Link
+            className="px-4 py-2 rounded-3xl bg-transparent border text-yellow border-yellow text-sm hover:bg-yellow/5 duration-150 transition-colors"
+            href="/#contact"
+          >
+            👋 Say Hello!
+          </Link>
+        </div>
       </div>
     </div>
   );
