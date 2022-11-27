@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="px-6 md:px-10 lg:px-12 h-24 w-full flex items-center">
+    <div className="px-6 md:px-10 lg:px-12 h-24 w-full flex items-center fixed">
       <div className="flex justify-between w-full">
         <span className="font-handwriting text-4xl">sg</span>
         <ul className="flex gap-8 items-center text-sm">
@@ -40,7 +40,7 @@ export default function Navbar() {
           </li>
         </ul>
         <Link
-          className="bg-black px-4 py-2 rounded bg-transparent border border-yellow text-sm hover:bg-yellow/5 duration-150 transition-colors"
+          className="px-4 py-2 rounded bg-transparent border border-yellow text-sm hover:bg-yellow/5 duration-150 transition-colors"
           href="/resume.pdf"
         >
           Resume

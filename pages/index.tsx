@@ -1,12 +1,14 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import About from "../components/About";
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-col">
+    <main className="flex flex-col">
       <Navbar />
-      <div className="flex-grow flex items-center">
+      <div className="">
         <Hero />
+        <About />
       </div>
     </main>
   );

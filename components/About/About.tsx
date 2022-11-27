@@ -1,7 +1,4 @@
-import Link from "next/link";
-
-export default function Hero() {
-  // text-[#B1CDEC]
+export default function About() {
   return (
     <div className="h-screen flex flex-col justify-center">
       <div className="container mx-auto">
@@ -19,14 +16,6 @@ export default function Hero() {
           <br />
           in my last year finishing up my computer science degree.
         </p>
-        <div className="mt-12">
-          <Link
-            href="#contact"
-            className="px-6 py-4 rounded bg-transparent border border-yellow hover:bg-yellow/5 duration-150 transition-colors"
-          >
-            Contact me!
-          </Link>
-        </div>
       </div>
     </div>
   );
