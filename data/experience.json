@@ -5,11 +5,16 @@
       "title": "Software Engineer Co-op",
       "url": "https://gigturbo.com/",
       "time": "January 2021 - January 2022",
-      "logo": "fa-brands fa-github",
+      "logo": "/images/gigturbo.webp",
       "points": [
         "Lead frontend engineer behind beta site rewrite. Initial app built on Angular, then rewritten in React (Next.js)",
         "Expanding features, managing and developing a growing community of users while focusing on usability testing and documentation of product use",
         "Leveraging machine learning capabilities and 3rd party API's to enhance behavioral and audience targeting capabilities for the platform"
+      ],
+      "techIcons": [
+        "fa-brands fa-react",
+        "fa-brands fa-angular",
+        "fa-brands fa-figma"
       ],
       "showExperience": true
     },
@@ -18,11 +23,17 @@
       "title": "Full Stack Developer Internship",
       "url": "https://laundrywell-web.vercel.app/",
       "time": "January 2020 - January 2021",
-      "logo": "fa-brands fa-github",
+      "logo": "/images/laundrywell.webp",
       "points": [
-        "Lead frontend engineer behind beta site rewrite. Initial app built on Angular, then rewritten in React (Next.js)",
-        "Expanding features, managing and developing a growing community of users while focusing on usability testing and documentation of product use",
-        "Leveraging machine learning capabilities and 3rd party API's to enhance behavioral and audience targeting capabilities for the platform"
+        "Implemented CRUD actions for laundry bookings",
+        "Worked on the React rewrite exclusively utilizing Next.js, TailwindCSS and React Query",
+        "Built order delivery system for drivers to manage pickups and deliveries",
+        "Built authentication/authorization systems"
+      ],
+      "techIcons": [
+        "fa-brands fa-react",
+        "fa-brands fa-node-js",
+        "fa-brands fa-figma"
       ],
       "showExperience": true
     }

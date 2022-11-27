@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 import jobs from '~/data/experience.json';
 
@@ -10,7 +11,7 @@ export default function Experience() {
   return (
     <div id="experience" className="flex h-screen flex-col justify-center">
       <div className="container mx-auto">
-        <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
+        <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
           Where I've Worked
         </h2>
 
@@ -20,9 +21,11 @@ export default function Experience() {
               <button
                 key={job.name}
                 className={clsx(
-                  'mb-4 block w-60 rounded-3xl py-4 px-6 text-2xl transition-all duration-75 hover:text-yellow',
+                  'mb-4 block w-60 rounded-3xl border-2  py-4 px-6 text-2xl transition-all duration-150 hover:text-yellow',
                   {
-                    'border-2 text-yellow': idx === jobIndex,
+                    hidden: !job.showExperience,
+                    'border-yellow bg-yellow/5 text-yellow': idx === jobIndex,
+                    'border-transparent': idx !== jobIndex,
                   },
                 )}
                 onClick={() => setJobIndex(idx)}
@@ -34,7 +37,12 @@ export default function Experience() {
           <section className="col-span-2">
             <h3 className="text-2xl font-bold">
               {jobs.data[jobIndex].title}{' '}
-              <a className="text-yellow" href={jobs.data[jobIndex].url}>
+              <a
+                className="text-yellow"
+                target="_blank"
+                rel="noreferrer"
+                href={jobs.data[jobIndex].url}
+              >
                 @ {jobs.data[jobIndex].name}
               </a>
             </h3>
@@ -48,6 +56,22 @@ export default function Experience() {
                 ))}
               </ul>
             </div>
+          </section>
+          <section className="flex items-start justify-around">
+            <div className="flex gap-4 text-4xl">
+              {jobs.data[jobIndex].techIcons.map((icon) => (
+                <i key={icon} className={icon} />
+              ))}
+            </div>
+            <Image
+              className="object-contain"
+              src="Image"
+              width={150}
+              height={150}
+              quality={100}
+              alt={jobs.data[jobIndex].name}
+              loader={() => jobs.data[jobIndex].logo}
+            />
           </section>
         </div>
       </div>

@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="fixed flex h-24 w-full items-center px-6 md:px-10 lg:px-12 backdrop-blur bg-white/50 z-50">
+    <div className="bg-white/50 fixed z-50 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12">
       <div className="flex w-full justify-between">
         <span className="font-handwriting text-4xl">sg</span>
         <ul className="flex items-center gap-8 text-sm">
           <li>
             <a
-              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['1.'] hover:text-lg hover:font-bold"
+              className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['1.'] hover:text-lg hover:font-bold"
               href="#about"
             >
               About
@@ -16,7 +16,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['2.'] hover:text-lg hover:font-bold"
+              className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['2.'] hover:text-lg hover:font-bold"
               href="#experience"
             >
               Experience
@@ -24,7 +24,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['3.'] hover:text-lg hover:font-bold"
+              className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['3.'] hover:text-lg hover:font-bold"
               href="#projects"
             >
               Projects
@@ -32,7 +32,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['4.'] hover:text-lg hover:font-bold"
+              className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['4.'] hover:text-lg hover:font-bold"
               href="#contact"
             >
               Contact

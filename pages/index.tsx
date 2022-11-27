@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '~/components/Experience';
+import Projects from '~/components/Projects';
 import SideEmail from '~/components/SideEmail';
 import SideLinks from '../components/SideLinks';
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <Projects />
       </div>
       <SideEmail />
       <SideLinks />

@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "type": "Spotlight",
+      "name": "Spacetrest",
+      "description": "",
+      "tags": ["Next.js", "TailwindCSS", "GSAP"],
+      "repo": "https://github.com/shanerrr/Spacetrest",
+      "external": "https://spacetrest.vercel.app/"
+    },
+    {
+      "type": "Spotlight",
+      "name": "Shanerbot",
+      "description": "",
+      "tags": ["Discord.js", "MongoDB"],
+      "repo": "https://github.com/shanerrr/Shanerbot",
+      "external": false
+    }
+  ]
+}

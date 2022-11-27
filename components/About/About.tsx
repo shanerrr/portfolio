@@ -4,18 +4,11 @@ export default function About() {
   return (
     <div id="about" className="flex h-screen flex-col justify-center">
       <div className="container mx-auto">
-        <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
+        <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
           About Me
         </h2>
         <div className="grid grid-cols-3">
           <div className="relative h-96 w-96 rounded-full">
-            <Image
-              className="absolute flex rounded-full object-contain"
-              alt="Blob Profile"
-              fill={true}
-              src="/images/profileBlob.svg"
-              quality={100}
-            />
             <Image
               className="absolute z-10 flex rounded-full object-cover object-top"
               alt="Profile Picture"
