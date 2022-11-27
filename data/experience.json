@@ -2,7 +2,7 @@
   "data": [
     {
       "name": "Gigturbo",
-      "title": "Software Engineer",
+      "title": "Software Engineer Co-op",
       "url": "https://gigturbo.com/",
       "time": "January 2021 - January 2022",
       "logo": "fa-brands fa-github",
@@ -15,9 +15,9 @@
     },
     {
       "name": "LaundryWell",
-      "title": "Full Stack Developer",
+      "title": "Full Stack Developer Internship",
       "url": "https://laundrywell-web.vercel.app/",
-      "time": "January 2020 - January 2020",
+      "time": "January 2020 - January 2021",
       "logo": "fa-brands fa-github",
       "points": [
         "Lead frontend engineer behind beta site rewrite. Initial app built on Angular, then rewritten in React (Next.js)",

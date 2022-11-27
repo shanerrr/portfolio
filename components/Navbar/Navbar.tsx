@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="fixed flex h-24 w-full items-center px-6 md:px-10 lg:px-12">
+    <div className="fixed flex h-24 w-full items-center px-6 md:px-10 lg:px-12 backdrop-blur bg-white/50 z-50">
       <div className="flex w-full justify-between">
         <span className="font-handwriting text-4xl">sg</span>
         <ul className="flex items-center gap-8 text-sm">
@@ -49,7 +49,7 @@ export default function Navbar() {
             Resume
           </Link>
           <Link
-            className="rounded-3xl border border-yellow bg-transparent px-4 py-2 text-sm text-yellow transition-colors duration-150 hover:bg-yellow/5"
+            className="rounded-3xl border-2 border-yellow bg-transparent px-4 py-2 text-sm text-yellow transition-colors duration-150 hover:bg-yellow/5"
             href="/#contact"
           >
             👋 Say Hello!

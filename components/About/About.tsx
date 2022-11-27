@@ -10,10 +10,17 @@ export default function About() {
         <div className="grid grid-cols-3">
           <div className="relative h-96 w-96 rounded-full">
             <Image
+              className="absolute flex rounded-full object-contain"
+              alt="Blob Profile"
+              fill={true}
+              src="/images/profileBlob.svg"
+              quality={100}
+            />
+            <Image
               className="absolute z-10 flex rounded-full object-cover object-top"
               alt="Profile Picture"
               fill={true}
-              src="/profile.webp"
+              src="/images/profile.webp"
               quality={100}
             />
           </div>
@@ -34,10 +41,10 @@ export default function About() {
               <br />
             </p>
             <div className="grid grid-cols-3">
-              <h2 className="text-xl col-span-3">
+              <h2 className="col-span-3 text-xl">
                 Here are a few technologies I've been working with recently:
               </h2>
-              <ul className="text-md mt-5 grid grid-cols-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹'] col-span-2">
+              <ul className="text-md col-span-2 mt-5 grid grid-cols-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">
                 <li>TypeScript/JavaScript</li>
                 <li>React</li>
                 <li>Node.js</li>
