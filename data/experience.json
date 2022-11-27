@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "name": "Gigturbo",
+      "title": "Software Engineer",
+      "url": "https://gigturbo.com/",
+      "time": "January 2021 - January 2022",
+      "logo": "fa-brands fa-github",
+      "points": [
+        "Lead frontend engineer behind beta site rewrite. Initial app built on Angular, then rewritten in React (Next.js)",
+        "Expanding features, managing and developing a growing community of users while focusing on usability testing and documentation of product use",
+        "Leveraging machine learning capabilities and 3rd party API's to enhance behavioral and audience targeting capabilities for the platform"
+      ],
+      "showExperience": true
+    },
+    {
+      "name": "LaundryWell",
+      "title": "Full Stack Developer",
+      "url": "https://laundrywell-web.vercel.app/",
+      "time": "January 2020 - January 2020",
+      "logo": "fa-brands fa-github",
+      "points": [
+        "Lead frontend engineer behind beta site rewrite. Initial app built on Angular, then rewritten in React (Next.js)",
+        "Expanding features, managing and developing a growing community of users while focusing on usability testing and documentation of product use",
+        "Leveraging machine learning capabilities and 3rd party API's to enhance behavioral and audience targeting capabilities for the platform"
+      ],
+      "showExperience": true
+    }
+  ]
+}

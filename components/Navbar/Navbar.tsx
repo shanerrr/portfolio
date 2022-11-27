@@ -6,9 +6,9 @@ export default function Navbar() {
       <div className="flex w-full justify-between">
         <span className="font-handwriting text-4xl">sg</span>
         <ul className="flex items-center gap-8 text-sm">
-          <li className="text-sm">
+          <li>
             <a
-              className="before:mr-2 before:font-bold before:text-yellow before:content-['1.']"
+              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['1.'] hover:text-lg hover:font-bold"
               href="#about"
             >
               About
@@ -16,24 +16,24 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className="before:mr-2 before:font-bold before:text-yellow before:content-['2.']"
-              href=""
+              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['2.'] hover:text-lg hover:font-bold"
+              href="#experience"
             >
               Experience
             </a>
           </li>
           <li>
             <a
-              className="before:mr-2 before:font-bold before:text-yellow before:content-['3.']"
-              href=""
+              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['3.'] hover:text-lg hover:font-bold"
+              href="#projects"
             >
               Projects
             </a>
           </li>
           <li>
             <a
-              className="before:mr-2 before:font-bold before:text-yellow before:content-['4.']"
-              href=""
+              className="transition-all duration-150 before:mr-2 before:font-bold before:text-yellow before:content-['4.'] hover:text-lg hover:font-bold"
+              href="#contact"
             >
               Contact
             </a>

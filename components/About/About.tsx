@@ -7,7 +7,7 @@ export default function About() {
         <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
           About Me
         </h2>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-3">
           <div className="relative h-96 w-96 rounded-full">
             <Image
               className="absolute z-10 flex rounded-full object-cover object-top"
@@ -17,7 +17,7 @@ export default function About() {
               quality={100}
             />
           </div>
-          <div>
+          <div className="col-span-2">
             <p className="text-xl">
               Hey, what's up! My name is Shane, and I've been building software
               since I was a kid. I started off making simple games with simple
@@ -32,16 +32,20 @@ export default function About() {
               experience. I plan to continue to work and help startups start 😊.
               <br />
               <br />
-              Here are a few technologies I've been working with recently:
             </p>
-            <ul className="text-md mt-5 grid grid-cols-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>GraphQL</li>
-              <li>Express.js</li>
-              <li>Supabase</li>
-            </ul>
+            <div className="grid grid-cols-3">
+              <h2 className="text-xl col-span-3">
+                Here are a few technologies I've been working with recently:
+              </h2>
+              <ul className="text-md mt-5 grid grid-cols-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹'] col-span-2">
+                <li>TypeScript/JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>GraphQL</li>
+                <li>Express.js</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

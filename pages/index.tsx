@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
-
+import Experience from '~/components/Experience';
 import SideEmail from '~/components/SideEmail';
 import SideLinks from '../components/SideLinks';
 
@@ -19,6 +19,7 @@ export default function Home() {
       <div className="">
         <Hero />
         <About />
+        <Experience />
       </div>
       <SideEmail />
       <SideLinks />
