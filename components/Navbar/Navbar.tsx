@@ -1,22 +1,22 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="px-6 md:px-10 lg:px-12 h-24 w-full flex items-center fixed">
-      <div className="flex justify-between w-full">
+    <div className="fixed flex h-24 w-full items-center px-6 md:px-10 lg:px-12">
+      <div className="flex w-full justify-between">
         <span className="font-handwriting text-4xl">sg</span>
-        <ul className="flex gap-8 items-center text-sm">
+        <ul className="flex items-center gap-8 text-sm">
           <li className="text-sm">
             <a
-              className="before:content-['.01'] before:mr-2 before:text-yellow before:font-bold"
-              href=""
+              className="before:mr-2 before:font-bold before:text-yellow before:content-['1.']"
+              href="#about"
             >
               About
             </a>
           </li>
           <li>
             <a
-              className="before:content-['.02'] before:mr-2 before:text-yellow before:font-bold"
+              className="before:mr-2 before:font-bold before:text-yellow before:content-['2.']"
               href=""
             >
               Experience
@@ -24,7 +24,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className="before:content-['.03'] before:mr-2 before:text-yellow before:font-bold"
+              className="before:mr-2 before:font-bold before:text-yellow before:content-['3.']"
               href=""
             >
               Projects
@@ -32,7 +32,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className="before:content-['.04'] before:mr-2 before:text-yellow before:font-bold"
+              className="before:mr-2 before:font-bold before:text-yellow before:content-['4.']"
               href=""
             >
               Contact
@@ -44,12 +44,12 @@ export default function Navbar() {
             target="_blank"
             rel="noreferrer"
             href="/resume.pdf"
-            className="px-4 py-2 bg-transparent text-sm hover:text-yellow duration-150 transition-colors"
+            className="bg-transparent px-4 py-2 text-sm transition-colors duration-150 hover:text-yellow"
           >
             Resume
           </Link>
           <Link
-            className="px-4 py-2 rounded-3xl bg-transparent border text-yellow border-yellow text-sm hover:bg-yellow/5 duration-150 transition-colors"
+            className="rounded-3xl border border-yellow bg-transparent px-4 py-2 text-sm text-yellow transition-colors duration-150 hover:bg-yellow/5"
             href="/#contact"
           >
             👋 Say Hello!

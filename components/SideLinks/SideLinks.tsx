@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import socials from "~/data/socials.json";
+import clsx from 'clsx';
+import socials from '~/data/socials.json';
 
 export default function SideLinks() {
   return (
@@ -8,7 +8,7 @@ export default function SideLinks() {
         {socials.data.map((social, idx) => (
           <li
             className={clsx({
-              "after:content-[''] after:w-[1px] after:h-28 after:block after:bg-yellow after:mx-auto after:mt-5":
+              'after:mx-auto after:mt-5 after:block after:h-28 after:w-[1px] after:bg-yellow':
                 idx === socials.data.length - 1,
             })}
             key={social.name}
@@ -18,10 +18,10 @@ export default function SideLinks() {
               target="_blank"
               rel="noreferrer"
               className={clsx(
-                `${social.icon} hover:text-yellow hover:scale-110 scale-100 transition-all duration-150`,
+                `${social.icon} scale-100 transition-all duration-150 hover:scale-110 hover:text-yellow`,
                 {
                   hidden: !social.showSocial,
-                }
+                },
               )}
             />
           </li>

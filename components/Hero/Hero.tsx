@@ -1,12 +1,12 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Hero() {
   // text-[#B1CDEC]
   return (
-    <div className="h-screen flex flex-col justify-center">
+    <div className="flex h-screen flex-col justify-center">
       <div className="container mx-auto">
         <span className="">👋🏽 Hello, my name is</span>
-        <h1 className="text-7xl font-handwriting font-extrabold leading-tight text-yellow">
+        <h1 className="font-handwriting text-7xl font-extrabold leading-tight text-yellow">
           Shane Goonasekera.
         </h1>
         <h2 className="text-7xl font-bold leading-tight">
@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="mt-12">
           <Link
             href="#contact"
-            className="px-6 py-4 rounded bg-transparent border border-yellow hover:bg-yellow/5 duration-150 transition-colors"
+            className="rounded border border-yellow bg-transparent px-6 py-4 transition-colors duration-150 hover:bg-yellow/5"
           >
             Contact me!
           </Link>

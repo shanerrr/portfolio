@@ -1,21 +1,21 @@
-import type { AppProps } from "next/app";
-import "../styles/globals.css";
-import { Inter, Dancing_Script } from "@next/font/google";
+import type { AppProps } from 'next/app';
+import '../styles/globals.css';
+import { Inter, Dancing_Script } from '@next/font/google';
 
 //fonts
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ['latin'],
+  variable: '--font-inter',
 });
 const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  variable: "--font-dancing",
+  subsets: ['latin'],
+  variable: '--font-dancing',
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`${inter.variable} ${dancingScript.variable} font-sans bg-navygreen w-full`}
+      className={`${inter.variable} ${dancingScript.variable} w-full bg-navygreen font-sans`}
     >
       <Component {...pageProps} />
     </div>

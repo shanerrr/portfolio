@@ -1,17 +1,26 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
+import Head from 'next/head';
 
-import SideLinks from "../components/SideLinks";
+//components
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import About from '../components/About';
+
+import SideEmail from '~/components/SideEmail';
+import SideLinks from '../components/SideLinks';
 
 export default function Home() {
   return (
     <main className="relative flex flex-col">
+      <Head>
+        <title>Shane Goonasekera</title>
+      </Head>
+
       <Navbar />
       <div className="">
         <Hero />
         <About />
       </div>
+      <SideEmail />
       <SideLinks />
     </main>
   );
