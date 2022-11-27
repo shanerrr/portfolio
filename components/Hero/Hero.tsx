@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="flex h-screen flex-col justify-center">
       <div className="container mx-auto">
         <span className="">👋🏽 Hello, my name is</span>
-        <h1 className="font-handwriting text-7xl font-extrabold leading-tight text-yellow">
+        <h1 className="font-handwriting text-8xl font-extrabold leading-tight text-yellow">
           Shane Goonasekera.
         </h1>
         <h2 className="text-7xl font-bold leading-tight">
