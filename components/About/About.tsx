@@ -22,7 +22,7 @@ export default function About() {
           </div>
           <div className="col-span-2">
             <p className="text-xl">
-              Hey, what's up! My name is Shane, and I've been building software
+              Hey, what&apos;s up! My name is Shane, and I&apos;ve been building software
               since I was a kid. I started off making simple games with simple
               game engines to building stuff for the internet. My main focus
               currently is full-stack web development, but I love to learn just
@@ -38,7 +38,7 @@ export default function About() {
             </p>
             <div className="grid grid-cols-3">
               <h2 className="col-span-3 text-xl">
-                Here are a few technologies I've been working with recently:
+                Here are a few technologies I&apos;ve been working with recently:
               </h2>
               <ul className="text-md col-span-2 mt-5 grid grid-cols-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">
                 <li>TypeScript/JavaScript</li>

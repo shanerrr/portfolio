@@ -9,7 +9,7 @@ export default function Projects() {
     >
       <div className="container mx-auto">
         <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['3.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
-          Things I've Built
+          Things I&apos;ve Built
         </h2>
         <section className="grid grid-cols-6 gap-y-16">
           {projects.data

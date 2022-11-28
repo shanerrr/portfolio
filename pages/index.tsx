@@ -10,6 +10,7 @@ import Contact from '~/components/Contact';
 
 import SideEmail from '~/components/SideEmail';
 import SideLinks from '../components/SideLinks';
+import Footer from '~/components/Footer';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </div>
       <SideEmail />
       <SideLinks />
