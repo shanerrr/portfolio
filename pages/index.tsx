@@ -14,6 +14,8 @@ export default function Home() {
     <main className="relative flex flex-col">
       <Head>
         <title>Shane Goonasekera</title>
+        <meta name="description" content="Stuff about Shane" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Navbar />

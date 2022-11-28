@@ -1,20 +1,31 @@
 {
   "data": [
     {
-      "type": "Spotlight",
+      "isSpotlight": true,
+      "logo": "/images/spacetrest.webp",
       "name": "Spacetrest",
-      "description": "",
+      "description": "A web app utilizing NASA's APIs to display all thier pictures in a beautiful way. Save your favourite photos, see when it was taken, read more about it and scroll till ",
       "tags": ["Next.js", "TailwindCSS", "GSAP"],
       "repo": "https://github.com/shanerrr/Spacetrest",
       "external": "https://spacetrest.vercel.app/"
     },
     {
-      "type": "Spotlight",
+      "isSpotlight": true,
+      "logo": "/images/spacetrest.webp",
       "name": "Shanerbot",
       "description": "",
       "tags": ["Discord.js", "MongoDB"],
       "repo": "https://github.com/shanerrr/Shanerbot",
       "external": false
+    },
+    {
+      "isSpotlight": true,
+      "logo": "/images/spacetrest.webp",
+      "name": "Bonavoy",
+      "description": "",
+      "tags": ["Next.js", "GraphQL", "Node.js", "Supabase", "TailwindCSS"],
+      "repo": false,
+      "external": "https://planner.bonavoy.com/"
     }
   ]
 }

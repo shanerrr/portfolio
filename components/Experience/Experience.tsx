@@ -14,18 +14,17 @@ export default function Experience() {
         <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-5 after:flex after:w-full after:items-center after:border after:border-yellow/50">
           Where I've Worked
         </h2>
-
-        <div className="grid grid-cols-4 gap-10">
-          <section className="col-span-1">
+        <div className="grid grid-cols-6 gap-8">
+          <section className="col-span-1 col-start-2">
             {jobs.data.map((job, idx) => (
               <button
                 key={job.name}
                 className={clsx(
-                  'mb-4 block w-60 rounded-3xl border-2  py-4 px-6 text-2xl transition-all duration-150 hover:text-yellow',
+                  'mb-4 block w-60 rounded-3xl border-2 py-4 px-6 text-2xl transition-all duration-150 hover:text-yellow',
                   {
                     hidden: !job.showExperience,
                     'border-yellow bg-yellow/5 text-yellow': idx === jobIndex,
-                    'border-transparent': idx !== jobIndex,
+                    'border-navygreen': idx !== jobIndex,
                   },
                 )}
                 onClick={() => setJobIndex(idx)}
@@ -34,18 +33,36 @@ export default function Experience() {
               </button>
             ))}
           </section>
-          <section className="col-span-2">
-            <h3 className="text-2xl font-bold">
-              {jobs.data[jobIndex].title}{' '}
-              <a
-                className="text-yellow"
-                target="_blank"
-                rel="noreferrer"
-                href={jobs.data[jobIndex].url}
-              >
-                @ {jobs.data[jobIndex].name}
-              </a>
-            </h3>
+          <section className="col-span-3">
+            <div className="flex justify-between">
+              <h3 className="mt-2 text-2xl font-bold">
+                {jobs.data[jobIndex].title}{' '}
+                <a
+                  className="text-yellow"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={jobs.data[jobIndex].url}
+                >
+                  @ {jobs.data[jobIndex].name}
+                </a>
+              </h3>
+              <div className="flex items-center">
+                <div className="mr-4 flex gap-2 text-xl opacity-60">
+                  {jobs.data[jobIndex].techIcons.map((icon) => (
+                    <i key={icon} className={icon} />
+                  ))}
+                </div>
+                <Image
+                  className="object-contain"
+                  src="Image"
+                  width={60}
+                  height={60}
+                  quality={100}
+                  alt={jobs.data[jobIndex].name}
+                  loader={() => jobs.data[jobIndex].logo}
+                />
+              </div>
+            </div>
             <p className="text-lg opacity-60">{jobs.data[jobIndex].time}</p>
             <div>
               <ul className="text-md mt-5 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">
@@ -56,22 +73,6 @@ export default function Experience() {
                 ))}
               </ul>
             </div>
-          </section>
-          <section className="flex items-start justify-around">
-            <div className="flex gap-4 text-4xl">
-              {jobs.data[jobIndex].techIcons.map((icon) => (
-                <i key={icon} className={icon} />
-              ))}
-            </div>
-            <Image
-              className="object-contain"
-              src="Image"
-              width={150}
-              height={150}
-              quality={100}
-              alt={jobs.data[jobIndex].name}
-              loader={() => jobs.data[jobIndex].logo}
-            />
           </section>
         </div>
       </div>

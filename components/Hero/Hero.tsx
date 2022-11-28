@@ -22,9 +22,9 @@ export default function Hero() {
         <div className="mt-12">
           <Link
             href="#contact"
-            className="rounded border border-yellow bg-transparent px-6 py-4 transition-colors duration-150 hover:bg-yellow/5"
+            className="rounded-3xl border-2 border-yellow bg-transparent px-6 py-4 text-xl transition-colors duration-150 hover:bg-yellow/5"
           >
-            Contact me!
+            Say Hello!
           </Link>
         </div>
       </div>

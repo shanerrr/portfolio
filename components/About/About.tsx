@@ -8,13 +8,16 @@ export default function About() {
           About Me
         </h2>
         <div className="grid grid-cols-3">
-          <div className="relative h-96 w-96 rounded-full">
+          <div className="relative mx-auto h-96 w-96 rounded-full">
             <Image
-              className="absolute z-10 flex rounded-full object-cover object-top"
+              className="rounded-full object-cover object-top"
               alt="Profile Picture"
               fill={true}
               src="/images/profile.webp"
               quality={100}
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             />
           </div>
           <div className="col-span-2">
