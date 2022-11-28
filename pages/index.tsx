@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <div className="">
+      <div className="container mx-auto">
         <Hero />
         <About />
         <Experience />
