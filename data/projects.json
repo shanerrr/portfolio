@@ -4,25 +4,28 @@
       "isSpotlight": true,
       "logo": "/images/spacetrest.webp",
       "name": "Spacetrest",
-      "description": "A web app utilizing NASA's APIs to display all thier pictures in a beautiful way. Save your favourite photos, see when it was taken, read more about it and scroll till ",
+      "description": "A web app utilizing NASA's photos APIs and displays in a beautiful way. You can save your favorite photos, see when it was taken, read details about them, and keep scrolling (infinite scroll) till NASA rate limits my API key.",
+      "time": "January 2022",
       "tags": ["Next.js", "TailwindCSS", "GSAP"],
       "repo": "https://github.com/shanerrr/Spacetrest",
       "external": "https://spacetrest.vercel.app/"
     },
     {
       "isSpotlight": true,
-      "logo": "/images/spacetrest.webp",
+      "logo": "/images/shanerbot.webp",
       "name": "Shanerbot",
-      "description": "",
+      "description": "A feature-rich discord bot that is updated frequently and written in Javascript utilizing the discord.js framework. This discord bot has the ability to stream audio from YouTube, SoundCloud, and other music streaming sites and plays it in the connected channel.",
+      "time": "November 2019 - Present",
       "tags": ["Discord.js", "MongoDB"],
       "repo": "https://github.com/shanerrr/Shanerbot",
       "external": false
     },
     {
       "isSpotlight": true,
-      "logo": "/images/spacetrest.webp",
+      "logo": "/images/bonavoy.webp",
       "name": "Bonavoy",
-      "description": "",
+      "description": "A web app to help users build and plan their dream trips. In its current state, users can register, log in, plan a trip, and make a simple itinerary. Currently, the project's development has halted due to a lack of access to specific APIs (like Skyscanner) and costs. ",
+      "time": "August 2020 - Present",
       "tags": ["Next.js", "GraphQL", "Node.js", "Supabase", "TailwindCSS"],
       "repo": false,
       "external": "https://planner.bonavoy.com/"
