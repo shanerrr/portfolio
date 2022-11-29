@@ -5,7 +5,7 @@ export default function Contact() {
       className="mx-auto flex h-screen max-w-xl flex-col justify-center"
     >
       <h2 className="flex items-center justify-center whitespace-nowrap text-2xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['4.']">
-        What&apos;s Next?
+        What&apos;s Next? 🤙
       </h2>
       <h1 className="my-8 text-center text-5xl font-bold text-yellow">
         Get in Touch

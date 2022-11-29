@@ -3,8 +3,8 @@ import Image from 'next/image';
 export default function About() {
   return (
     <div id="about" className="flex h-screen flex-col justify-center">
-      <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-5 after:w-full after:border after:border-yellow/50">
-        About Me
+      <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-4 after:w-full after:border after:border-yellow/50">
+        About Me 🧑
       </h2>
       <div className="grid grid-cols-3">
         <div className="relative mx-auto h-80 w-80 rounded-full">
