@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <section className="relative flex h-screen flex-col justify-center">
       <span className="text-sm sm:text-base">👋🏽 Hello, my name is</span>
-      <h1 className="my-1 font-handwriting text-4xl font-extrabold text-yellow sm:my-3 sm:text-6xl md:text-7xl lg:text-8xl">
+      <h1 className="my-1 font-handwriting text-3xl font-extrabold text-yellow sm:my-3 sm:text-6xl md:text-7xl lg:text-8xl">
         Shane Goonasekera.
       </h1>
-      <h2 className="my-1 text-3xl font-bold sm:my-3 sm:text-5xl md:text-6xl lg:text-7xl">
+      <h2 className="my-1 text-xl font-bold sm:my-3 sm:text-5xl md:text-6xl lg:text-7xl">
         I{' '}
         <motion.span
           className="inline-block"

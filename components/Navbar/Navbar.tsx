@@ -55,7 +55,7 @@ export default function Navbar() {
           </Link>
           <a
             className="rounded-3xl border-2 border-yellow bg-transparent px-4 py-2 text-sm text-yellow transition-colors duration-150 hover:bg-yellow/5"
-            href="/#contact"
+            href="#contact"
           >
             👋 Say Hello!
           </a>

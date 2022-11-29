@@ -4,7 +4,7 @@ import socials from '~/data/socials.json';
 export default function SideLinks() {
   return (
     <div className="fixed bottom-0 left-5">
-      <ul className="grid grid-cols-1 gap-3 text-xl">
+      <ul className="grid grid-cols-1 gap-2 sm:gap-3 text-base sm:text-xl">
         {socials.data.map((social, idx) => (
           <li
             className={clsx({
