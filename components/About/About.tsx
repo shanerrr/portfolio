@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import profileImg from '~/public/images/profile.webp';
 
 export default function About() {
   return (
@@ -6,20 +7,21 @@ export default function About() {
       <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-4 after:w-full after:border after:border-yellow/50">
         About Me 🧑
       </h2>
-      <div className="grid grid-cols-3">
-        <div className="relative mx-auto h-80 w-80 rounded-full">
+      <div className="grid grid-cols-3 gap-16 xl:gap-16">
+        <div className="relative col-span-3 mx-auto h-80 w-80 rounded-full lg:col-span-1">
           <Image
             className="rounded-full object-cover object-top"
             alt="Profile Picture"
             fill={true}
-            src="/images/profile.webp"
+            src={profileImg}
+            placeholder="blur"
             quality={100}
             sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
-              33vw"
+              100vw"
           />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-3 lg:col-span-2">
           <p className="text-xl">
             Hey, what&apos;s up! My name is Shane, and I&apos;ve been building
             software since I was a kid. I started off making simple games with
@@ -39,7 +41,7 @@ export default function About() {
             <h2 className="col-span-3 text-xl">
               Here are a few technologies I&apos;ve been working with recently:
             </h2>
-            <ul className="text-md col-span-2 mt-5 grid grid-cols-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">
+            <ul className="text-md col-span-3 mt-5 grid grid-cols-2 xl:col-span-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">
               <li>TypeScript/JavaScript</li>
               <li>React</li>
               <li>Node.js</li>
