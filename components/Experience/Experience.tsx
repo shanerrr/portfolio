@@ -14,12 +14,12 @@ export default function Experience() {
         Where I&apos;ve Worked 💼
       </h2>
       <div className="grid grid-cols-4 gap-8">
-        <section className="col-span-1">
+        <section className="flex lg:block col-span-4 lg:col-span-1">
           {jobs.data.map((job, idx) => (
             <button
               key={job.name}
               className={clsx(
-                'mb-4 block w-60 rounded-3xl border-2 py-4 px-6 text-2xl transition-all duration-150 hover:text-yellow',
+                'mb-4 block w-full rounded-3xl border-2 py-4 px-6 text-2xl transition-all duration-150 hover:text-yellow',
                 {
                   hidden: !job.showExperience,
                   'border-yellow bg-yellow/5 text-yellow': idx === jobIndex,
@@ -32,7 +32,7 @@ export default function Experience() {
             </button>
           ))}
         </section>
-        <section className="col-span-3">
+        <section className="col-span-4 lg:col-span-3">
           <div className="flex justify-between">
             <h3 className="mt-2 text-2xl font-bold">
               {jobs.data[jobIndex].title}{' '}
