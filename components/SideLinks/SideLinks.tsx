@@ -3,8 +3,8 @@ import socials from '~/data/socials.json';
 
 export default function SideLinks() {
   return (
-    <div className="fixed bottom-0 left-5">
-      <ul className="grid grid-cols-1 gap-2 sm:gap-3 text-base sm:text-xl">
+    <div className="fixed bottom-0 left-5 hidden md:block">
+      <ul className="grid grid-cols-1 gap-2 text-xl sm:gap-3">
         {socials.data.map((social, idx) => (
           <li
             className={clsx({

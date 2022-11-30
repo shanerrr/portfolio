@@ -7,11 +7,10 @@ import About from '../components/About';
 import Experience from '~/components/Experience';
 import Projects from '~/components/Projects';
 import Contact from '~/components/Contact';
-
 import SideEmail from '~/components/SideEmail';
 import SideLinks from '../components/SideLinks';
 import Footer from '~/components/Footer';
-import Loader from '~/components/Loader';
+// import Loader from '~/components/Loader';
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
 
       {/* <Loader /> */}
       <Navbar />
-      <div className="container mx-auto">
+      <div className="container">
         <Hero />
         <About />
         <Experience />

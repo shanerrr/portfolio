@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <nav className="fixed z-40 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12">
       <div className="flex w-full justify-between">
@@ -8,7 +11,7 @@ export default function Navbar() {
           sg
         </span>
         <div className="flex gap-8">
-          <ul className="flex items-center gap-8 text-sm">
+          <ul className="hidden items-center gap-8 text-sm sm:flex">
             <li>
               <a
                 className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['1.'] hover:text-lg hover:font-bold"
@@ -43,7 +46,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <div className="flex justify-center">
+          <div className="hidden justify-center sm:flex">
             <Link
               target="_blank"
               rel="noreferrer"
