@@ -35,13 +35,13 @@ export default function Projects() {
               <h1 className="mt-3 text-3xl font-bold">{project.name}</h1>
               <h4 className="text-xs text-yellow opacity-40">{project.time}</h4>
               <p className="mt-2 text-lg">{project.description}</p>
-              <div className="flex items-center justify-between py-4">
-                <div className="flex gap-3 text-sm opacity-60">
+              <div className="grid grid-cols-4 items-center justify-between py-4">
+                <div className="col-span-3 flex gap-3 overflow-x-auto text-sm opacity-60">
                   {project.tags.map((tag) => (
                     <span key={tag}>{tag}</span>
                   ))}
                 </div>
-                <div className="flex gap-4 text-2xl">
+                <div className="col-span-1 flex justify-end gap-4 text-2xl">
                   {project.repo && (
                     <a
                       target="_blank"
