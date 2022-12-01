@@ -7,7 +7,7 @@ export default function About() {
       id="about"
       className="flex h-max min-h-screen flex-col justify-center py-24"
     >
-      <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-4 after:w-full after:border after:border-yellow/50">
+      <h2 className="mb-16 flex items-center whitespace-nowrap text-2xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-4 after:w-full after:border after:border-yellow/50 sm:text-3xl">
         About Me 🧑
       </h2>
       <div className="grid grid-cols-3 gap-x-4 gap-y-8 sm:gap-y-16 lg:gap-x-16">

@@ -7,14 +7,17 @@ export default function Projects() {
       id="projects"
       className="flex h-full min-h-screen flex-col justify-center py-24"
     >
-      <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['3.'] after:ml-4 after:w-full after:border after:border-yellow/50">
+      <h2 className="mb-16 flex items-center whitespace-nowrap text-2xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['3.'] after:ml-4 after:w-full after:border after:border-yellow/50 sm:text-3xl">
         Things I&apos;ve Built 💻
       </h2>
       <section className="grid grid-cols-6 gap-y-16">
         {projects.data
           .filter((project) => project.isSpotlight)
           .map((project) => (
-            <div key={project.name} className="col-span-6 2xl:col-span-4 2xl:col-start-2">
+            <div
+              key={project.name}
+              className="col-span-6 2xl:col-span-4 2xl:col-start-2"
+            >
               <div className="flex justify-between">
                 <Image
                   className="rounded-full object-contain"

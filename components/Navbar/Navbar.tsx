@@ -15,9 +15,9 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
         >
           sg
         </Link>
-        <div className="relative flex gap-8">
+        <div className="flex gap-8">
           {/* mobile nav */}
-          <div className="block sm:hidden">
+          <div className="block sm:hidden z-50">
             <button
               type="button"
               onClick={() => setNavOpen(!navOpen)}
@@ -27,10 +27,11 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
             </button>
           </div>
           {navOpen && (
-            <aside className="absolute top-full right-0 h-96 w-60 rounded-xl bg-navygreen py-4 px-6 shadow-2xl">
-              <ul className="flex h-full flex-col gap-8 text-lg">
+            <aside className="fixed top-0 right-0 flex h-screen w-60 flex-col gap-8 bg-navygreen py-24 px-6 shadow-2xl z-40">
+              <ul className="flex flex-col gap-8 text-lg">
                 <li>
                   <a
+                    onClick={() => setNavOpen(!navOpen)}
                     className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['1.'] hover:text-lg hover:font-bold"
                     href="#about"
                   >
@@ -39,6 +40,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
                 </li>
                 <li>
                   <a
+                    onClick={() => setNavOpen(!navOpen)}
                     className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['2.'] hover:text-lg hover:font-bold"
                     href="#experience"
                   >
@@ -47,6 +49,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
                 </li>
                 <li>
                   <a
+                    onClick={() => setNavOpen(!navOpen)}
                     className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['3.'] hover:text-lg hover:font-bold"
                     href="#projects"
                   >
@@ -55,6 +58,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
                 </li>
                 <li>
                   <a
+                    onClick={() => setNavOpen(!navOpen)}
                     className="transition-all duration-150 before:mr-2 before:font-handwriting before:font-bold before:text-yellow before:content-['4.'] hover:text-lg hover:font-bold"
                     href="#contact"
                   >
@@ -62,8 +66,9 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
                   </a>
                 </li>
               </ul>
-              <div className="">
+              <div className="mx-auto">
                 <Link
+                  onClick={() => setNavOpen(!navOpen)}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="/resume.pdf"

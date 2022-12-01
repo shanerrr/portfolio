@@ -13,7 +13,7 @@ export default function Experience() {
       id="experience"
       className="flex h-screen flex-col justify-center py-24"
     >
-      <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-4 after:w-full after:border after:border-yellow/50">
+      <h2 className="mb-16 flex items-center whitespace-nowrap text-2xl sm:text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-4 after:w-full after:border after:border-yellow/50">
         Where I&apos;ve Worked 💼
       </h2>
       <div className="grid grid-cols-4 gap-8">
