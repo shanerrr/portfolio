@@ -43,7 +43,7 @@ export default function Experience() {
               <a
                 className="text-yellow"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href={jobs.data[jobIndex].url}
               >
                 @ {jobs.data[jobIndex].name}

@@ -42,7 +42,7 @@ export default function Projects() {
                   {project.repo && (
                     <a
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="fa-brands fa-github transition-colors duration-150 hover:text-yellow"
                       href={project.repo as string}
                     />
@@ -50,7 +50,7 @@ export default function Projects() {
                   {project.external && (
                     <a
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="fa-regular fa-arrow-up-right-from-square transition-colors duration-150 hover:text-yellow"
                       href={project.external as string}
                     />

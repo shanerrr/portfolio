@@ -35,33 +35,6 @@ export default function Hero() {
           Contact Me!
         </a>
       </div>
-      {/* 
-      <motion.div
-        // initial={{ y: '-100vh' }}
-        animate={{ x: -100, y: 5 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute top-80 right-64 h-16 w-16 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: 15, y: -200 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute right-0 h-16 w-16 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: -100, y: 83 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute top-36 right-8 h-48 w-48 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: 200, y: 100 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute right-1/2 top-1/2 h-40 w-40 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: 83, y: -50 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute right-0 bottom-0 h-[500px] w-[500px] rounded-full bg-yellow mix-blend-screen"
-      /> */}
     </section>
   );
 }

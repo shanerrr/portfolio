@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import Head from 'next/head';
+import clsx from 'clsx';
 
 //components
 import Navbar from '../components/Navbar';
@@ -13,6 +15,8 @@ import Footer from '~/components/Footer';
 // import Loader from '~/components/Loader';
 
 export default function Home() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <main className="relative flex flex-col overflow-hidden">
       <Head>
@@ -22,8 +26,13 @@ export default function Home() {
       </Head>
 
       {/* <Loader /> */}
-      <Navbar />
-      <div className="container">
+      <Navbar navOpen={navOpen} setNavOpen={(navOpen) => setNavOpen(navOpen)} />
+      <div
+        className={clsx('container transition-all duration-150', {
+          'blur-0': !navOpen,
+          'blur-lg': navOpen,
+        })}
+      >
         <Hero />
         <About />
         <Experience />
