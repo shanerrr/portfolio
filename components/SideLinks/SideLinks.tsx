@@ -16,7 +16,7 @@ export default function SideLinks() {
             <a
               href={social.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className={clsx(
                 `${social.icon} scale-100 transition-all duration-150 hover:scale-110 hover:text-yellow`,
                 {

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// [#BDCDDB] #F4B8E2
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -25,6 +26,15 @@ module.exports = {
       yellow: '#F6E8AA',
       white: '#FFFFFF',
       transparent: 'transparent',
+    },
+    animation: {
+      backgroundPan: 'backgroundPan 1s linear infinite',
+    },
+    keyframes: {
+      backgroundPan: {
+        '0%': { backgroundPosition: '0% center' },
+        '100%': { backgroundPosition: '-200% center' },
+      },
     },
   },
   plugins: [],

@@ -5,9 +5,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex h-max min-h-screen flex-col justify-center"
+      className="flex h-max min-h-screen flex-col justify-center py-24"
     >
-      <h2 className="mb-16 flex items-center whitespace-nowrap text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-4 after:w-full after:border after:border-yellow/50">
+      <h2 className="mb-16 flex items-center whitespace-nowrap text-2xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['1.'] after:ml-4 after:w-full after:border after:border-yellow/50 sm:text-3xl">
         About Me 🧑
       </h2>
       <div className="grid grid-cols-3 gap-x-4 gap-y-8 sm:gap-y-16 lg:gap-x-16">
@@ -24,7 +24,7 @@ export default function About() {
           />
         </div>
         <div className="col-span-3 sm:text-lg md:col-span-2 md:text-xl">
-          <p className="sm:text-lg md:text-xl">
+          <p className="text-lg md:text-xl">
             Hey, what&apos;s up! My name is Shane, and I&apos;ve been building
             software since I was a kid. I started off making simple games with
             simple game engines to building stuff for the internet. My main
@@ -40,7 +40,7 @@ export default function About() {
             <br />
           </p>
           <div className="grid grid-cols-3">
-            <h2 className="col-span-3">
+            <h2 className="col-span-3 text-lg md:text-xl">
               Here are a few technologies I&apos;ve been working with recently:
             </h2>
             <ul className="col-span-3 mt-5 grid grid-cols-2 text-sm sm:text-base xl:col-span-2 [&>li]:mb-4 [&>li]:before:mr-2 [&>li]:before:text-yellow [&>li]:before:content-['▹']">

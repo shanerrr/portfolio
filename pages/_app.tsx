@@ -1,9 +1,9 @@
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
-import { Inter, Dancing_Script } from '@next/font/google';
+import { Rubik, Dancing_Script } from '@next/font/google';
 
 //fonts
-const inter = Inter({
+const workSans = Rubik({
   subsets: ['latin'],
   variable: '--font-inter',
 });
@@ -15,7 +15,7 @@ const dancingScript = Dancing_Script({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`${inter.variable} ${dancingScript.variable} w-full bg-navygreen font-sans`}
+      className={`${workSans.variable} ${dancingScript.variable} w-full bg-navygreen font-sans`}
     >
       <Component {...pageProps} />
     </div>

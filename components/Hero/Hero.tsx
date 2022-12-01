@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="relative flex h-screen flex-col justify-center">
       <span className="text-sm sm:text-base">👋🏽 Hello, my name is</span>
-      <h1 className="my-2 font-handwriting text-5xl font-extrabold text-yellow sm:my-3 sm:text-6xl md:text-7xl lg:text-8xl">
-        Shane Goonasekera.
+      <h1 className="my-2 whitespace-nowrap font-handwriting text-5xl font-extrabold text-yellow sm:my-3 sm:text-6xl md:text-7xl lg:text-8xl">
+        Shane Goonasekera
       </h1>
       <h2 className="my-1 text-3xl font-bold sm:my-3 sm:text-5xl md:text-6xl lg:text-7xl">
         I{' '}
@@ -22,8 +22,8 @@ export default function Hero() {
         </motion.span>{' '}
         to build software.
       </h2>
-      <p className="mt-3 w-full text-base sm:text-lg md:text-xl xl:w-1/2">
-        I&apos;m an Edmonton-based software engineer building frontend and
+      <p className="mt-3 w-full text-lg md:text-xl xl:w-1/2">
+        I&apos;m an Edmonton-based software developer building frontend and
         backend applications for the web. Currently, I am a student in my last
         year finishing up my computer science degree.
       </p>
@@ -35,33 +35,6 @@ export default function Hero() {
           Contact Me!
         </a>
       </div>
-      {/* 
-      <motion.div
-        // initial={{ y: '-100vh' }}
-        animate={{ x: -100, y: 5 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute top-80 right-64 h-16 w-16 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: 15, y: -200 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute right-0 h-16 w-16 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: -100, y: 83 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute top-36 right-8 h-48 w-48 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: 200, y: 100 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute right-1/2 top-1/2 h-40 w-40 rounded-full bg-yellow mix-blend-screen"
-      />
-      <motion.div
-        animate={{ x: 83, y: -50 }}
-        transition={{ repeat: Infinity, repeatType: 'reverse', duration: 20 }}
-        className="absolute right-0 bottom-0 h-[500px] w-[500px] rounded-full bg-yellow mix-blend-screen"
-      /> */}
     </section>
   );
 }
