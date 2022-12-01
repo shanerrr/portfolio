@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="relative flex h-screen flex-col justify-center">
       <span className="text-sm sm:text-base">👋🏽 Hello, my name is</span>
-      <h1 className="my-2 font-handwriting text-5xl font-extrabold text-yellow sm:my-3 sm:text-6xl md:text-7xl lg:text-8xl">
-        Shane Goonasekera.
+      <h1 className="my-2 whitespace-nowrap font-handwriting text-5xl font-extrabold text-yellow sm:my-3 sm:text-6xl md:text-7xl lg:text-8xl">
+        Shane Goonasekera
       </h1>
       <h2 className="my-1 text-3xl font-bold sm:my-3 sm:text-5xl md:text-6xl lg:text-7xl">
         I{' '}
@@ -22,8 +22,8 @@ export default function Hero() {
         </motion.span>{' '}
         to build software.
       </h2>
-      <p className="mt-3 w-full text-base sm:text-lg md:text-xl xl:w-1/2">
-        I&apos;m an Edmonton-based software engineer building frontend and
+      <p className="mt-3 w-full text-lg md:text-xl xl:w-1/2">
+        I&apos;m an Edmonton-based software developer building frontend and
         backend applications for the web. Currently, I am a student in my last
         year finishing up my computer science degree.
       </p>

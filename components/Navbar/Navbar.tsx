@@ -7,9 +7,9 @@ export default function Navbar() {
   return (
     <nav className="fixed z-40 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12">
       <div className="flex w-full justify-between">
-        <span className="relative -top-[6px] flex items-center font-handwriting text-4xl">
+        <h1 className="white relative flex animate-backgroundPan items-center bg-gradient-to-r from-yellow to-[#B8C9FF] bg-[length:200%_200%] bg-clip-text font-handwriting text-4xl font-bold text-transparent">
           sg
-        </span>
+        </h1>
         <div className="flex gap-8">
           <ul className="hidden items-center gap-8 text-sm sm:flex">
             <li>
