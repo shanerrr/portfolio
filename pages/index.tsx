@@ -22,7 +22,7 @@ export default function Home() {
       <Head>
         <title>Shane Goonasekera</title>
         <meta name="description" content="Stuff about Shane" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/images/logo.webp" />
       </Head>
 
       {/* <Loader /> */}
