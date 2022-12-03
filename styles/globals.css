@@ -4,6 +4,8 @@
 
 html,
 body {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #0f2027;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -19,6 +21,19 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #0f2027;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 3px solid #0f2027;
+  border-radius: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

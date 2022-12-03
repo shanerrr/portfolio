@@ -10,10 +10,11 @@ export default function Loader() {
     <motion.div
       animate={{ opacity: 0 }}
       transition={{ delay: 1 }}
-      className="fixed z-50 flex h-screen w-screen items-center justify-center bg-white"
+      className="fixed flex h-screen w-screen items-center justify-center bg-white"
     >
       <motion.div
         animate={{
+          zIndex: [1000, 1000, -1000],
           y: ['100vh', '0vh', '0vh', '0vh'],
           height: ['16rem', '16rem', '1000rem'],
           width: ['16rem', '16rem', '1000rem'],

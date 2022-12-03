@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { motion } from 'framer-motion';
 interface NavbarProps {
   navOpen: boolean;
   setNavOpen: (navOpen: boolean) => void;
@@ -17,7 +17,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
         </Link>
         <div className="flex gap-8">
           {/* mobile nav */}
-          <div className="block sm:hidden z-50">
+          <div className="z-50 block sm:hidden">
             <button
               type="button"
               onClick={() => setNavOpen(!navOpen)}
@@ -27,7 +27,12 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
             </button>
           </div>
           {navOpen && (
-            <aside className="fixed top-0 right-0 flex h-screen w-60 flex-col gap-8 bg-navygreen py-24 px-6 shadow-2xl z-40">
+            <motion.aside
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', duration: 0.15 }}
+              className="fixed top-0 right-0 z-40 flex h-screen w-60 flex-col gap-8 bg-navygreen py-24 px-6 shadow-2xl"
+            >
               <ul className="flex flex-col gap-8 text-lg">
                 <li>
                   <a
@@ -77,7 +82,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
                   Resume
                 </Link>
               </div>
-            </aside>
+            </motion.aside>
           )}
 
           {/* desktop nav */}
