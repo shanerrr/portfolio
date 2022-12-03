@@ -36,6 +36,9 @@ module.exports = {
         '100%': { backgroundPosition: '-200% center' },
       },
     },
+    backgroundImage: {
+      'main-pattern': "url('/images/texture.png')",
+    },
   },
   plugins: [],
 };

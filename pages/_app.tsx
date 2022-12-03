@@ -15,7 +15,7 @@ const dancingScript = Dancing_Script({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`${workSans.variable} ${dancingScript.variable} w-full bg-navygreen font-sans`}
+      className={`${workSans.variable} ${dancingScript.variable} w-full bg-navygreen bg-main-pattern font-sans`}
     >
       <Component {...pageProps} />
     </div>
