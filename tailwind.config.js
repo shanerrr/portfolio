@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['var(--font-inter)'],
+      sans: ['var(--font-rubik)'],
       handwriting: ['var(--font-dancing)'],
     },
     colors: {
@@ -35,6 +35,9 @@ module.exports = {
         '0%': { backgroundPosition: '0% center' },
         '100%': { backgroundPosition: '-200% center' },
       },
+    },
+    backgroundImage: {
+      'main-pattern': "url('/images/texture.png')",
     },
   },
   plugins: [],
