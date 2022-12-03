@@ -7,7 +7,12 @@ interface NavbarProps {
 
 export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
   return (
-    <nav className="fixed z-40 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12">
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: 'tween', delay: 1.2, duration: 0.2 }}
+      className="fixed z-40 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12"
+    >
       <div className="flex w-full justify-between">
         <Link
           href="/"
@@ -132,6 +137,6 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
