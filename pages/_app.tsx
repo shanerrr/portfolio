@@ -3,9 +3,9 @@ import '../styles/globals.css';
 import { Rubik, Dancing_Script } from '@next/font/google';
 
 //fonts
-const workSans = Rubik({
+const rubik = Rubik({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-rubik',
 });
 const dancingScript = Dancing_Script({
   subsets: ['latin'],
@@ -15,7 +15,7 @@ const dancingScript = Dancing_Script({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`${workSans.variable} ${dancingScript.variable} w-full bg-navygreen bg-main-pattern font-sans`}
+      className={`${rubik.variable} ${dancingScript.variable} w-full bg-navygreen bg-main-pattern font-sans`}
     >
       <Component {...pageProps} />
     </div>
