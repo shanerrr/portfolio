@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { motion } from 'framer-motion';
 interface NavbarProps {
   navOpen: boolean;
   setNavOpen: (navOpen: boolean) => void;
@@ -7,7 +7,12 @@ interface NavbarProps {
 
 export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
   return (
-    <nav className="fixed z-40 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12">
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: 'tween', delay: 1.2, duration: 0.2 }}
+      className="fixed z-40 flex h-24 w-full items-center px-6 backdrop-blur md:px-10 lg:px-12"
+    >
       <div className="flex w-full justify-between">
         <Link
           href="/"
@@ -17,7 +22,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
         </Link>
         <div className="flex gap-8">
           {/* mobile nav */}
-          <div className="block sm:hidden z-50">
+          <div className="z-50 block sm:hidden">
             <button
               type="button"
               onClick={() => setNavOpen(!navOpen)}
@@ -27,7 +32,12 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
             </button>
           </div>
           {navOpen && (
-            <aside className="fixed top-0 right-0 flex h-screen w-60 flex-col gap-8 bg-navygreen py-24 px-6 shadow-2xl z-40">
+            <motion.aside
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', duration: 0.15 }}
+              className="fixed top-0 right-0 z-40 flex h-screen w-60 flex-col gap-8 bg-navygreen py-24 px-6 shadow-2xl"
+            >
               <ul className="flex flex-col gap-8 text-lg">
                 <li>
                   <a
@@ -77,7 +87,7 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
                   Resume
                 </Link>
               </div>
-            </aside>
+            </motion.aside>
           )}
 
           {/* desktop nav */}
@@ -127,6 +137,6 @@ export default function Navbar({ setNavOpen, navOpen }: NavbarProps) {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

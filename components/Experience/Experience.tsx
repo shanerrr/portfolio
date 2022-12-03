@@ -13,7 +13,7 @@ export default function Experience() {
       id="experience"
       className="flex h-screen flex-col justify-center py-24"
     >
-      <h2 className="mb-16 flex items-center whitespace-nowrap text-2xl sm:text-3xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-4 after:w-full after:border after:border-yellow/50">
+      <h2 className="mb-16 flex items-center whitespace-nowrap text-2xl font-extrabold before:mr-4 before:font-handwriting before:text-2xl before:font-semibold before:text-yellow before:content-['2.'] after:ml-4 after:w-full after:border after:border-yellow/50 sm:text-3xl">
         Where I&apos;ve Worked 💼
       </h2>
       <div className="grid grid-cols-4 gap-8">
@@ -49,12 +49,7 @@ export default function Experience() {
                 @ {jobs.data[jobIndex].name}
               </a>
             </h3>
-            <div className="hidden sm:flex items-center">
-              <div className="mr-4 flex gap-2 text-xl opacity-60">
-                {jobs.data[jobIndex].techIcons.map((icon) => (
-                  <i key={icon} className={icon} />
-                ))}
-              </div>
+            <div className="hidden items-center sm:flex">
               <Image
                 className="object-contain"
                 src="Image"

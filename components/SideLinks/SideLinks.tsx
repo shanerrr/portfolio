@@ -1,9 +1,15 @@
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import socials from '~/data/socials.json';
 
 export default function SideLinks() {
   return (
-    <div className="fixed bottom-0 left-5 hidden md:block">
+    <motion.div
+      initial={{ x: -10, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ type: 'tween', delay: 1.2, duration: 0.2 }}
+      className="fixed bottom-0 left-5 hidden md:block"
+    >
       <ul className="grid grid-cols-1 gap-2 text-xl sm:gap-3">
         {socials.data.map((social, idx) => (
           <li
@@ -27,7 +33,6 @@ export default function SideLinks() {
           </li>
         ))}
       </ul>
-      <div></div>
-    </div>
+    </motion.div>
   );
 }
