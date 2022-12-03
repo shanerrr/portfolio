@@ -7,7 +7,7 @@ export default function SideLinks() {
     <motion.div
       initial={{ x: -10, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ type: 'tween', delay: 1.2, duration: 0.2 }}
+      transition={{ type: 'tween', delay: 1.2, duration: 0.5 }}
       className="fixed bottom-0 left-5 hidden md:block"
     >
       <ul className="grid grid-cols-1 gap-2 text-xl sm:gap-3">

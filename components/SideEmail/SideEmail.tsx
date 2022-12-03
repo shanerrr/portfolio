@@ -5,7 +5,7 @@ export default function SideEmail() {
     <motion.div
       initial={{ x: 10, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ type: 'tween', delay: 1.2, duration: 0.2 }}
+      transition={{ type: 'tween', delay: 1.2, duration: 0.5 }}
       className="fixed bottom-0 right-5 left-auto hidden font-light after:mx-auto after:mt-5 after:block after:h-28 after:w-[1px] after:bg-yellow md:block"
     >
       <a
