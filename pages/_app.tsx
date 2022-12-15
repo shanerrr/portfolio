@@ -1,10 +1,11 @@
 import type { AppProps } from 'next/app';
-import '../styles/globals.css';
 import { Rubik, Dancing_Script } from '@next/font/google';
+import '../styles/globals.css';
 
 //fonts
 const rubik = Rubik({
   subsets: ['latin'],
+  fallback: ['-apple-system', 'Roboto'],
   variable: '--font-rubik',
 });
 const dancingScript = Dancing_Script({

@@ -68,7 +68,7 @@ export default function About() {
               just about anything.
               <br />
               <br />
-              Right now, I am finishing up my last year (till April 2023) of my
+              Right now, I am finishing up my last year of my
               undergraduate degree, but I have had the privilege of working at
               different startups as an intern and gaining that real-world
               experience. I plan to continue to work and help startups start 😊.

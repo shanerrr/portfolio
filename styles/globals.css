@@ -4,6 +4,7 @@
 
 html,
 body {
+  color: white;
   scrollbar-width: thin;
   scrollbar-color: white #0f2027;
   scroll-behavior: smooth;
@@ -34,14 +35,4 @@ a {
   background-color: white;
   border: 3px solid #0f2027;
   border-radius: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
