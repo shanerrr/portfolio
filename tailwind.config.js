@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-// [#BDCDDB] #F4B8E2
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -17,8 +16,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['var(--font-rubik)'],
-      handwriting: ['var(--font-dancing)'],
+      sans: ['Rubik', 'sans-serif'],
+      handwriting: ['Dancing Script', 'cursive'],
     },
     colors: {
       navygreen: '#0F2027',
