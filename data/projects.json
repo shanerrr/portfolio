@@ -34,10 +34,10 @@
       "isSpotlight": false,
       "logo": "/images/epicapp.webp",
       "name": "Epic App",
-      "description": "A team project building a social media app allowing users to create posts, follow other users (both locally and on other servers) and share posts. Very similar to the spec of how Mastodon works",
+      "description": "A team project building a social media app allowing users to create posts, follow other users (both locally and on other servers) and share posts. Very similar to the spec of how Mastodon works.",
       "time": "February - April 2023",
-      "tags": ["Next.js", "React-Query", "TailwindCSS"],
-      "repo": "https://github.com/CMPUT404-GROUP-PROJ/EpicApp",
+      "tags": ["Next.js", "Supabase", "Django", "React-Query"],
+      "repo": "https://github.com/orgs/CMPUT404-GROUP-PROJ/repositories",
       "external": "https://epic-app.vercel.app/"
     }
   ]
