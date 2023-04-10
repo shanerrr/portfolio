@@ -46,7 +46,7 @@ export default function Projects() {
               <motion.div
                 variants={childVariants}
                 key={project.name}
-                className="col-span-6 2xl:col-span-4 2xl:col-start-2"
+                className="col-span-6"
               >
                 <div className="flex justify-between">
                   <Image
@@ -94,6 +94,64 @@ export default function Projects() {
                 </div>
               </motion.div>
             ))}
+        </div>
+        <div className="py-24">
+          <h2 className="text-center text-2xl font-bold sm:text-3xl">
+            Other Cool Projects
+          </h2>
+          <div className="mt-11 grid grid-cols-3 gap-6">
+            {projects.data
+              .filter((project) => !project.isSpotlight)
+              .map((project) => (
+                <motion.div
+                  className="rounded-xl bg-yellow/5 p-4"
+                  variants={childVariants}
+                  key={project.name}
+                >
+                  <div className="flex justify-between items-center py-2">
+                    <Image
+                      className="object-contain"
+                      src="Image"
+                      width={50}
+                      height={50}
+                      quality={100}
+                      alt={project.name}
+                      loader={() => project.logo}
+                    />
+                    <div className="col-span-1 flex justify-end gap-4 text-xl">
+                      {project.repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="fa-brands fa-github transition-colors duration-150 hover:text-yellow"
+                          href={project.repo as string}
+                        />
+                      )}
+                      {project.external && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="fa-regular fa-arrow-up-right-from-square transition-colors duration-150 hover:text-yellow"
+                          href={project.external as string}
+                        />
+                      )}
+                    </div>
+                  </div>
+                  <h1 className="mt-3 text-3xl font-bold">{project.name}</h1>
+                  <h4 className="text-xs text-yellow opacity-40">
+                    {project.time}
+                  </h4>
+                  <p className="mt-2 text-lg">{project.description}</p>
+                  <div className="grid grid-cols-4 items-center justify-between py-4">
+                    <div className="col-span-3 flex gap-3 overflow-x-auto text-sm opacity-60">
+                      {project.tags.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+          </div>
         </div>
       </motion.div>
     </section>
