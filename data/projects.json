@@ -2,6 +2,16 @@
   "data": [
     {
       "isSpotlight": true,
+      "logo": "/images/bonavoy.webp",
+      "name": "Bonavoy",
+      "description": "A web app to help users build and plan their dream trips. In its current state, users can register, log in, plan a trip, and make a simple itinerary. Currently, the project's development has halted due to a lack of access to specific APIs (like Skyscanner) and costs, but we are working around that. ",
+      "time": "August 2020 - Present",
+      "tags": ["Next.js", "GraphQL", "Node.js", "Supabase", "TailwindCSS"],
+      "repo": false,
+      "external": "https://www.bonavoy.com/"
+    },
+    {
+      "isSpotlight": true,
       "logo": "/images/spacetrest.webp",
       "name": "Spacetrest",
       "description": "A web app utilizing NASA's photos APIs and displays in a beautiful way. You can save your favorite photos, see when it was taken, read details about them, and keep scrolling (infinite scroll) till NASA rate limits my API key.",
@@ -21,14 +31,14 @@
       "external": false
     },
     {
-      "isSpotlight": true,
-      "logo": "/images/bonavoy.webp",
-      "name": "Bonavoy",
-      "description": "A web app to help users build and plan their dream trips. In its current state, users can register, log in, plan a trip, and make a simple itinerary. Currently, the project's development has halted due to a lack of access to specific APIs (like Skyscanner) and costs. ",
-      "time": "August 2020 - Present",
-      "tags": ["Next.js", "GraphQL", "Node.js", "Supabase", "TailwindCSS"],
-      "repo": false,
-      "external": "https://www.bonavoy.com/"
+      "isSpotlight": false,
+      "logo": "/images/epicapp.webp",
+      "name": "Epic App",
+      "description": "A team project building a social media app allowing users to create posts, follow other users (both locally and on other servers) and share posts. Very similar to the spec of how Mastodon works.",
+      "time": "February - April 2023",
+      "tags": ["Next.js", "Supabase", "Django", "React-Query"],
+      "repo": "https://github.com/orgs/CMPUT404-GROUP-PROJ/repositories",
+      "external": "https://epic-app.vercel.app/"
     }
   ]
 }

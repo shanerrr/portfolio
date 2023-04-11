@@ -1,6 +1,11 @@
 import { useRef } from 'react';
-import Image from 'next/image';
 import { useInView, motion, Variants } from 'framer-motion';
+import Image from 'next/image';
+
+//components
+import OtherProjects from './OtherProjects/OtherProjects';
+
+//data
 import projects from '~/data/projects.json';
 
 export default function Projects() {
@@ -46,7 +51,7 @@ export default function Projects() {
               <motion.div
                 variants={childVariants}
                 key={project.name}
-                className="col-span-6 2xl:col-span-4 2xl:col-start-2"
+                className="col-span-6"
               >
                 <div className="flex justify-between">
                   <Image
@@ -95,6 +100,7 @@ export default function Projects() {
               </motion.div>
             ))}
         </div>
+        <OtherProjects />
       </motion.div>
     </section>
   );
