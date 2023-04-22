@@ -68,8 +68,7 @@ export default function About() {
               just about anything.
               <br />
               <br />
-              Right now, I am finishing up my last year of my
-              undergraduate degree, but I have had the privilege of working at
+              Right now, I just finished my computer science undergrad and I have had the privilege of working at
               different startups as an intern and gaining that real-world
               experience. I plan to continue to work and help startups start 😊.
               <br />
