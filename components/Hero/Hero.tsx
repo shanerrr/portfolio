@@ -55,8 +55,7 @@ export default function Hero() {
         className="mt-3 w-full text-lg md:text-xl xl:w-1/2"
       >
         I&apos;m an Edmonton-based software developer building frontend and
-        backend applications for the web. Currently, I am a student in my last
-        year finishing up my computer science degree.
+        backend applications for the web.
       </motion.p>
       <motion.div variants={childVariants} className="mt-12">
         <a
