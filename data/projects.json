@@ -21,7 +21,7 @@
       "external": "https://spacetrest.vercel.app/"
     },
     {
-      "isSpotlight": true,
+      "isSpotlight": false,
       "logo": "/images/shanerbot.webp",
       "name": "Shanerbot",
       "description": "A feature-rich discord bot that is updated frequently and written in Javascript utilizing the discord.js framework. This discord bot has the ability to stream audio from YouTube, SoundCloud, and other music streaming sites and plays it in the connected channel.",
