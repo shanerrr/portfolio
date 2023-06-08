@@ -2,6 +2,16 @@
   "data": [
     {
       "isSpotlight": true,
+      "logo": "/images/theagecollective.webp",
+      "name": "The Age Collective",
+      "description": "It's a platform that celebrates the natural process of aging through captivating stories. Explore the beauty and wisdom gained with each passing year as we challenge stereotypes and foster understanding.",
+      "time": "June 2023 - Present",
+      "tags": ["Next.js", "Contentful CMS", "TailwindCSS", "Framer Motion"],
+      "repo": false,
+      "external": "https://www.theagecollective.com/"
+    },
+    {
+      "isSpotlight": true,
       "logo": "/images/bonavoy.webp",
       "name": "Bonavoy",
       "description": "A web app to help users build and plan their dream trips. In its current state, users can register, log in, plan a trip, and make a simple itinerary. Currently, the project's development has halted due to a lack of access to specific APIs (like Skyscanner) and costs, but we are working around that. ",
