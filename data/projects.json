@@ -4,7 +4,7 @@
       "isSpotlight": true,
       "logo": "/images/theagecollective.webp",
       "name": "The Age Collective",
-      "description": "It's a platform that celebrates the natural process of aging through captivating stories. Explore the beauty and wisdom gained with each passing year as we challenge stereotypes and foster understanding.",
+      "description": "The only developer in a team of three building a a platform that celebrates the natural process of aging through captivating stories. Explore the beauty and wisdom gained with each passing year as we challenge stereotypes and foster understanding.",
       "time": "June 2023 - Present",
       "tags": ["Next.js", "Contentful CMS", "TailwindCSS", "Framer Motion"],
       "repo": false,
