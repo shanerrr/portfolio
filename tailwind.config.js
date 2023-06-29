@@ -21,6 +21,7 @@ module.exports = {
     },
     colors: {
       navygreen: '#0F2027',
+      brightgreen: '#142c36',
       black: '#000000',
       yellow: '#F6E8AA',
       white: '#FFFFFF',

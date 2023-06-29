@@ -43,7 +43,7 @@ export default function OtherProjects() {
           .filter((project) => !project.isSpotlight)
           .map((project) => (
             <motion.div
-              className="rounded-xl bg-yellow/5 p-4"
+              className="relative top-0 hover:-top-3 duration-150 transition-all rounded-xl bg-brightgreen p-4"
               variants={childVariants}
               key={project.name}
             >

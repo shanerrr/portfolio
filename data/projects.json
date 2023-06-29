@@ -3,6 +3,7 @@
     {
       "isSpotlight": true,
       "logo": "/images/theagecollective.webp",
+      "banner": "/images/banner-theagecollective.webp",
       "name": "The Age Collective",
       "description": "The only developer in a team of three building a a platform that celebrates the natural process of aging through captivating stories. Explore the beauty and wisdom gained with each passing year as we challenge stereotypes and foster understanding.",
       "time": "June 2023 - Present",
@@ -13,6 +14,7 @@
     {
       "isSpotlight": true,
       "logo": "/images/bonavoy.webp",
+      "banner": "/images/banner-bonavoy.webp",
       "name": "Bonavoy",
       "description": "A web app to help users build and plan their dream trips. In its current state, users can register, log in, plan a trip, and make a simple itinerary. Currently, the project's development has halted due to a lack of access to specific APIs (like Skyscanner) and costs, but we are working around that. ",
       "time": "August 2020 - Present",
@@ -23,6 +25,7 @@
     {
       "isSpotlight": true,
       "logo": "/images/spacetrest.webp",
+      "banner": "/images/banner-spacetrest.webp",
       "name": "Spacetrest",
       "description": "A web app utilizing NASA's photos APIs and displays in a beautiful way. You can save your favorite photos, see when it was taken, read details about them, and keep scrolling (infinite scroll) till NASA rate limits my API key.",
       "time": "January 2022",

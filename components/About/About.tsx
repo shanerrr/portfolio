@@ -43,7 +43,7 @@ export default function About() {
         <div className="grid grid-cols-3 gap-x-4 gap-y-8 sm:gap-y-16 lg:gap-x-16">
           <motion.div
             variants={childVariants}
-            className="relative col-span-3 mx-auto aspect-square w-1/2 rounded-full md:col-span-1 md:w-full"
+            className="relative col-span-3 mx-auto aspect-square w-1/2 md:col-span-1 md:w-full"
           >
             <Image
               className="rounded-full object-cover object-top"
@@ -52,8 +52,7 @@ export default function About() {
               src={profileImg}
               placeholder="blur"
               quality={100}
-              sizes="(min-width: 768px) 33vw, 
-            50vw"
+              sizes="(min-width: 768px) 33vw, 50vw"
             />
           </motion.div>
           <motion.div
@@ -68,9 +67,10 @@ export default function About() {
               just about anything.
               <br />
               <br />
-              Right now, I just finished my computer science undergrad and I have had the privilege of working at
-              different startups as an intern and gaining that real-world
-              experience. I plan to continue to work and help startups start 😊.
+              Right now, I just finished my computer science undergrad and I
+              have had the privilege of working at different startups as an
+              intern and gaining that real-world experience. I plan to continue
+              to work and help startups start 😊.
               <br />
               <br />
             </p>
