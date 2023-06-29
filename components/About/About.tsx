@@ -46,7 +46,7 @@ export default function About() {
             className="relative col-span-3 mx-auto aspect-square w-1/2 md:col-span-1 md:w-full"
           >
             <Image
-              className="after:border-1 rounded-full object-cover object-top"
+              className="rounded-full object-cover object-top"
               alt="Profile Picture"
               fill={true}
               src={profileImg}
