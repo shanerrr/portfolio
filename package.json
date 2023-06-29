@@ -11,8 +11,6 @@
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
     "clsx": "^1.2.1",
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.5",
     "framer-motion": "^10.12.16",
     "next": "13.4.5",
     "react": "18.2.0",
@@ -23,6 +21,8 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "autoprefixer": "^10.4.14",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "^13.4.7",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
