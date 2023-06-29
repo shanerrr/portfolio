@@ -54,7 +54,7 @@ export default function Projects() {
                 className="group"
               >
                 <div className="grid h-96 grid-cols-12 grid-rows-1">
-                  <div className="relative z-30 row-span-full group-odd:col-start-1 group-odd:col-end-7 group-even:col-start-7 group-even:col-span-full group-even:text-right">
+                  <div className="relative z-30 col-span-12 row-span-full lg:group-odd:col-start-1 lg:group-odd:col-end-7 lg:group-even:col-start-7 lg:group-even:col-span-full lg:group-even:text-right">
                     <div className="flex h-full flex-col justify-between">
                       <div className="flex group-even:justify-end">
                         <span className="text-md inline self-start rounded-3xl bg-yellow/10 px-4 py-2 leading-loose text-yellow">
@@ -62,18 +62,18 @@ export default function Projects() {
                         </span>
                       </div>
                       <div>
-                        <div className="flex py-3 group-odd:flex-row-reverse group-odd:justify-end group-even:justify-end">
+                        <div className="flex py-3 items-center group-odd:flex-row-reverse group-odd:justify-end group-even:justify-end">
                           <div>
-                            <h1 className="text-3xl font-bold">
+                            <h1 className="text-2xl lg:text-3xl font-bold">
                               {project.name}
                             </h1>
                             <h4 className="text-xs text-yellow opacity-40">
                               {project.time}
                             </h4>
                           </div>
-                          <div className="relative w-14 overflow-hidden rounded-full group-odd:mr-4 group-even:ml-4">
+                          <div className="flex flex-shrink-0 h-14 relative w-14 overflow-hidden rounded-full group-odd:mr-4 group-even:ml-4">
                             <Image
-                              className=" object-cover"
+                              className="object-cover"
                               src="Image"
                               quality={100}
                               fill={true}
@@ -113,7 +113,7 @@ export default function Projects() {
                       </div>
                     </div>
                   </div>
-                  <div className="relative row-span-full h-full overflow-hidden rounded-2xl group-odd:col-start-6 group-odd:col-span-full group-even:col-start-1 group-even:col-end-8">
+                  <div className="hidden lg:block relative row-span-full h-full overflow-hidden rounded-2xl group-odd:col-start-6 group-odd:col-span-full group-even:col-start-1 group-even:col-end-8">
                     <div className="mix-blend-multiply grayscale-0 absolute z-20 rounded-2xl h-full w-full bg-yellow/70 opacity-100 transition-opacity duration-150 hover:opacity-0" />
                     <Image
                       className="object-cover"
