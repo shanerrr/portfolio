@@ -114,9 +114,9 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="relative row-span-full h-full overflow-hidden rounded-2xl group-odd:col-start-6 group-odd:col-span-full group-even:col-start-1 group-even:col-end-8">
-                    <div className="absolute z-20 h-full w-full bg-yellow/30 opacity-100 transition-opacity duration-150 hover:opacity-0" />
+                    <div className="mix-blend-multiply grayscale-0 absolute z-20 rounded-2xl h-full w-full bg-yellow/70 opacity-100 transition-opacity duration-150 hover:opacity-0" />
                     <Image
-                      className=" object-cover"
+                      className="object-cover"
                       alt={project.name}
                       src={project.banner!}
                       fill={true}

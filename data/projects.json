@@ -25,7 +25,7 @@
     {
       "isSpotlight": true,
       "logo": "/images/spacetrest.webp",
-      "banner": "/images/banner-theagecollective.webp",
+      "banner": "/images/banner-spacetrest.webp",
       "name": "Spacetrest",
       "description": "A web app utilizing NASA's photos APIs and displays in a beautiful way. You can save your favorite photos, see when it was taken, read details about them, and keep scrolling (infinite scroll) till NASA rate limits my API key.",
       "time": "January 2022",
