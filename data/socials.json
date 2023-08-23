@@ -5,12 +5,6 @@
       "icon": "fa-brands fa-github",
       "url": "https://github.com/shanerrr",
       "showSocial": true
-    },
-    {
-      "name": "LinkedIn",
-      "icon": "fa-brands fa-linkedin-in",
-      "url": "https://www.linkedin.com/in/shanukgoonasekera",
-      "showSocial": true
     }
   ]
 }
